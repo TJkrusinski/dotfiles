@@ -12,7 +12,6 @@
 .forever/
 .gem/
 .gitattributes
-.githelpers
 .gvimrc
 .heroku/
 .httpie/
