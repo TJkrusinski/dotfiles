@@ -14,6 +14,8 @@ syntax on
 
 set shell=bash
 
+let g:gitgutter_enabled = 1
+
 map ,t :w\|:!mocha %
 map ,y :w\|:!node % 
 
