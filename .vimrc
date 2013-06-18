@@ -1,0 +1,27 @@
+call pathogen#infect() 
+
+set tabstop=4
+set showmatch
+set incsearch
+set number
+set autoindent
+set shiftwidth=4
+set nofoldenable    " disable folding
+set modeline
+set ls=2
+
+syntax on
+
+set shell=bash
+
+map ,t :w\|:!mocha %
+map ,y :w\|:!node % 
+
+" go to last cursor postion if there was one
+autocmd BufReadPost *
+	\ if line("'\"") > 0 && line("'\"") <= line("$") |
+	\ 	exe "normal g`\"" |
+	\ endif
+
+
+au BufNewFile,BufRead *.less set filetype=css
