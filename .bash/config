@@ -13,12 +13,6 @@ export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 
-# Make some commands not show up in history
-export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
-
-# Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob
-
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend
 

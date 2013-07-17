@@ -11,8 +11,10 @@ declare -a dirs_to_prepend=(
 declare -a dirs_to_append=(
     "/usr/bin"
     "$HOME/bin"
+    "$HOME/.bin"
     "$HOME/.dotfiles/bin"
     "$HOME/.rvm/bin"
+	"/usr/local/Cellar/ruby/2.0.0-p0/bin"
     "$(brew --prefix coreutils)/libexec/gnubin" # Add brew-installed GNU core utilities bin
     "$(brew --prefix)/share/npm/bin" # Add npm-installed package bin
 )

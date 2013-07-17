@@ -42,8 +42,8 @@ Library/
 Movies/
 Music/
 Pictures/
-/Public/
 Websites/
 things\ to\ do\ this\ year/
 .cache
-
+.vim/.netrwhist
+.siriproxy

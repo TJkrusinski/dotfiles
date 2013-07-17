@@ -17,6 +17,7 @@ set shell=bash
 let g:gitgutter_enabled = 1
 
 map ,t :w\|:!mocha %
+map ,p :w\|:!python %
 map ,y :w\|:!node % 
 
 " go to last cursor postion if there was one
