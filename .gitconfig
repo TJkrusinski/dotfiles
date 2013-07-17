@@ -61,7 +61,7 @@
 
 [core]
     # Use custom `.gitignore` and `.gitattributes`
-    excludesfile = ~/.gitignore
+	excludesfile = /Users/tjkrusinski/.globalignore/.gitignore
     attributesfile = ~/.gitattributes
 
 [credential]
