@@ -20,6 +20,10 @@ alias gp="git push"
 alias gd="git diff"
 alias ga="git add"
 
+# EVN
+alias dev="export NODE_ENV=development"
+alias prod="export NODE_ENV=production"
+
 # List dir contents aliases
 # ref: http://ss64.com/osx/ls.html
 # Long form no user group, color
