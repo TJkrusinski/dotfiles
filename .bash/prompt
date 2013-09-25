@@ -2,22 +2,6 @@
 
 # bash_prompt
 
-# Example:
-# nicolas@host: ~/.dotfiles on master[+!?$]
-# $
-
-# Screenshot: http://i.imgur.com/DSJ1G.png
-# iTerm2 prefs: import Solarized theme (disable bright colors for bold text)
-# Color ref: http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
-# More tips: http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html
-
-
-# Check that terminfo exists before changing TERM var to xterm-256color
-# Prevents prompt flashing in Mac OS X 10.6 Terminal.app
-if [ -e /usr/share/terminfo/x/xterm-256color ]; then
-    export TERM='xterm-256color'
-fi
-
 tput sgr 0 0
 
 # Base styles and color palette
