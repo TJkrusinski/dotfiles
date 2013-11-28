@@ -34,6 +34,9 @@
 .vim-fuf-data/
 .vim/.DS_Store
 .viminfo
+.nw-gyp
+.config
+.histfile
 Desktop/
 Documents/
 Downloads/

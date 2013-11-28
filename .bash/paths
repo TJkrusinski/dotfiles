@@ -39,4 +39,8 @@ done
 
 unset dirs_to_prepend dirs_to_append
 
+export pgvm_home=/Users/tjkrusinski/.pgvm
+export PATH=$pgvm_home/bin:$PATH
+export PATH=$pgvm_home/environments/current/bin:$PATH
+
 export PATH
