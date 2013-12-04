@@ -44,9 +44,12 @@ Dropbox/
 Library/
 Movies/
 Music/
+Books/
 Pictures/
 Websites/
 things\ to\ do\ this\ year/
 .cache
 .vim/.netrwhist
 .siriproxy
+bin/emails.js
+emails.txt
