@@ -20,6 +20,9 @@ alias gp="git push"
 alias gd="git diff"
 alias ga="git add"
 
+# Weird Time Thing
+alias showtime="while sleep 1;do tput sc;tput cup 0 $(($(tput cols)-29));date;tput rc;done &"
+
 # EVN
 alias dev="export NODE_ENV=development"
 alias prod="export NODE_ENV=production"

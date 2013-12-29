@@ -16,9 +16,12 @@ set shell=bash
 
 let g:gitgutter_enabled = 1
 
+let g:airline#extensions#tabline#enabled = 1
+
 map ,t :w\|:!mocha %
 map ,p :w\|:!python %
 map ,y :w\|:!node % 
+map ,c :w\|:!echo % \| pbcopy \<cr>
 
 " go to last cursor postion if there was one
 autocmd BufReadPost *
