@@ -17,6 +17,9 @@ set shell=bash
 let g:gitgutter_enabled = 1
 
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_left_sep='▶'
+let g:airline_right_sep='◀'
+let g:airline_theme='luna'
 
 map ,t :w\|:!mocha %
 map ,p :w\|:!python %
