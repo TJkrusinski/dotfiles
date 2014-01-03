@@ -56,7 +56,7 @@
 
 [color]
     # color opts: normal, black, red, green, yellow, blue, magenta, cyan, or white
-    ui = auto
+	ui = true
     interactive = auto
 
 [core]
