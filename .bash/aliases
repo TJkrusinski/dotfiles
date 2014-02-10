@@ -70,3 +70,6 @@ alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false &
 # Forward traffic out to the network
 alias gotoforwardmode="sudo sysctl -w net.inet.ip.forwarding=1"
 alias exitforwardmode="sudo sysctl -w net.inet.ip.forwarding=0"
+
+alias hit="pbpaste | highlight --syntax=js --style=zenburn -O rtf | pbcopy"
+alias _hit="highlight --syntax=js --style=zenburn -O rtf | pbcopy"
