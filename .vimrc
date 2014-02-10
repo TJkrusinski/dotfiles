@@ -32,5 +32,6 @@ autocmd BufReadPost *
 	\ 	exe "normal g`\"" |
 	\ endif
 
-
 au BufNewFile,BufRead *.less set filetype=css
+
+au BufEnter *.js vmap ,c <esc>:'<, '>:w !highlight --syntax=js --style=zenburn --line-numbers -O rtf \| pbcopy<CR>
