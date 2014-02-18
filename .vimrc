@@ -9,17 +9,21 @@ set shiftwidth=4
 set nofoldenable    " disable folding
 set modeline
 set ls=2
+set t_Co=256
 
 syntax on
 
 set shell=bash
+
+colorscheme github
+set background=light
 
 let g:gitgutter_enabled = 1
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_left_sep='▶'
 let g:airline_right_sep='◀'
-let g:airline_theme='luna'
+let g:airline_theme='jellybeans'
 
 map ,t :w\|:!mocha %
 map ,p :w\|:!python %
@@ -35,3 +39,13 @@ autocmd BufReadPost *
 au BufNewFile,BufRead *.less set filetype=css
 
 au BufEnter *.js vmap ,c <esc>:'<, '>:w !highlight --syntax=js --style=zenburn --line-numbers -O rtf \| pbcopy<CR>
+
+" Show syntax highlighting groups for word under cursor
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+ if !exists("*synstack")
+  return
+ endif
+ echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+
