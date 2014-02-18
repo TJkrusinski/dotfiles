@@ -28,7 +28,7 @@ if tput setaf 1 &> /dev/null; then
 	BOLD=$(tput bold)
 	RESET=$(tput sgr0)
 else
-	MAGENTA="\033[1;31m"
+	MAGENTA="\033[1;33m"
 	ORANGE="\033[1;33m"
 	GREEN="\033[1;32m"
 	PURPLE="\033[1;35m"
@@ -53,5 +53,5 @@ function parse_git_branch() {
 	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
 }
 
-export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
+export PS1="\[${BOLD}\u \[$WHITE\]at \h \[$WHITE\]in \w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
 export PS2="\[$ORANGE\]→ \[$RESET\]"
