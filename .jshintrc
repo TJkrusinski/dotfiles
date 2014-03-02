@@ -1,0 +1,10 @@
+{
+	"bitwise": true,
+	"camelcase": true,
+	"curly": false,
+	"freeze": true,
+	"unused": true,
+	"maxdepth": 3,
+	"node": true,
+	"browser": true
+}
