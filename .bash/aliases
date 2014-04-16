@@ -33,7 +33,7 @@ alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
 # List dir contents aliases
 # ref: http://ss64.com/osx/ls.html
 # Long form no user group, color
-alias l="ls -oG"
+alias l="clear && pwd && ls -FGl"
 # Order by last modified, long form no user group, color
 alias lt="ls -toG"
 # List all except . and ..., color, mark file types, long form no user group, file size
@@ -71,7 +71,8 @@ alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false &
 alias gotoforwardmode="sudo sysctl -w net.inet.ip.forwarding=1"
 alias exitforwardmode="sudo sysctl -w net.inet.ip.forwarding=0"
 
-alias hit="pbpaste | highlight --syntax=js --style=zenburn --line-numbers -O rtf | pbcopy"
-alias _hit="highlight --syntax=js --style=zenburn --line-numbers -O rtf | pbcopy"
+alias hit="pbpaste | highlight --syntax=js --style=seashell --line-numbers -O rtf | pbcopy"
+alias hithtml="pbpaste | highlight --syntax=html --style=seashell --line-numbers -O rtf | pbcopy"
+alias _hit="highlight --syntax=js --style=seashell --line-numbers -O rtf | pbcopy"
 
 alias mou="open -a mou"

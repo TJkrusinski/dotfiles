@@ -60,3 +60,11 @@ emails.txt
 Analog School
 .pip/pip.log
 bin/mobinit
+stream
+.vimgolf
+.atom
+.pm2
+.my.cnf
+.vimlog
+.viminfo.tmp
+.viminfz.tmp
