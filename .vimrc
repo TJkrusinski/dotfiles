@@ -20,8 +20,13 @@ set shell=bash
 colorscheme github
 set background=light
 
+" gitgutter
 let g:gitgutter_enabled = 1
 
+" markdown
+let g:vim_markdown_folding_disabled=1
+
+" airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_left_sep='▶'
 let g:airline_right_sep='◀'
