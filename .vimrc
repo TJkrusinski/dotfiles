@@ -1,8 +1,8 @@
 call pathogen#infect() 
 
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+set expandtab
 set autoindent
 set showmatch
 set incsearch
@@ -44,6 +44,7 @@ autocmd BufReadPost *
 	\ endif
 
 au BufNewFile,BufRead *.less set filetype=css
+au BufNewFile,BufRead *.json set filetype=js
 
 au BufEnter *.js vmap ,c <esc>:'<, '>:w !highlight --syntax=js --style=seashell --line-numbers -O rtf \| pbcopy<CR>
 au BufEnter *.html vmap ,ht <esc>:'<, '>:w !highlight --syntax=html --style=zenburn --line-numbers -O rtf \| pbcopy<CR>
