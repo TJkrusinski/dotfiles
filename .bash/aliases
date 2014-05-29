@@ -76,3 +76,5 @@ alias hithtml="pbpaste | highlight --syntax=html --style=seashell --line-numbers
 alias _hit="highlight --syntax=js --style=seashell --line-numbers -O rtf | pbcopy"
 
 alias mou="open -a mou"
+
+alias slack="open -n /Applications/Slack.app/"
