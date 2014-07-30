@@ -30,7 +30,9 @@ let g:vim_markdown_folding_disabled=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_left_sep='▶'
 let g:airline_right_sep='◀'
-let g:airline_theme='jellybeans'
+let g:airline_theme='sol'
+
+highlight ColorColumn ctermbg=255
 
 map ,t :w\|:!mocha %
 map ,p :w\|:!python %
@@ -45,6 +47,7 @@ autocmd BufReadPost *
 
 au BufNewFile,BufRead *.less set filetype=css
 au BufNewFile,BufRead *.json set filetype=js
+au BufNewFile,BufRead *.md set filetype=markdown
 
 au BufEnter *.js vmap ,c <esc>:'<, '>:w !highlight --syntax=js --style=seashell --line-numbers -O rtf \| pbcopy<CR>
 au BufEnter *.html vmap ,ht <esc>:'<, '>:w !highlight --syntax=html --style=zenburn --line-numbers -O rtf \| pbcopy<CR>
@@ -58,6 +61,3 @@ function! <SID>SynStack()
  endif
  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
-
-let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
