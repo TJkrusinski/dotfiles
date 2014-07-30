@@ -69,3 +69,8 @@ stream
 .viminfo.tmp
 .viminfz.tmp
 .dropbox-master
+.ec2
+Public/Drop\ Box/
+Public/.com.apple.timemachine.supported
+Applications
+Creative\ Cloud\ Files
