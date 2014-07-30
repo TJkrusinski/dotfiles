@@ -78,3 +78,5 @@ alias _hit="highlight --syntax=js --style=seashell --line-numbers -O rtf | pbcop
 alias mou="open -a mou"
 
 alias slack="open -n /Applications/Slack.app/"
+
+alias ip="ifconfig | grep \"inet \""
