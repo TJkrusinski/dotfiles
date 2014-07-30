@@ -83,3 +83,7 @@
 [user]
 	name = TJ Krusinski
 	email = tjkrus@gmail.com
+[github]
+	user = tjkrusinski
+[ghi]
+	token = !security find-internet-password -a  -s github.com -l 'ghi token' -w
