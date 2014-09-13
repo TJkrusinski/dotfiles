@@ -1,59 +1,56 @@
 [alias]
-    # https://git.wiki.kernel.org/articles/a/l/i/Aliases.html
+	# https://git.wiki.kernel.org/articles/a/l/i/Aliases.html
 
-    # `git remote prune origin`: remove remote-tracking branches that were deleted from the remote repo
-    # `git gc`: cleanup unnecessary files and optimize the local repository
-    # `git clean -df`: remove untracked files and directories from the working tree
-    # `git stash clear`: remove all stashed states
-    trim = !git remote prune origin && git gc
-    cleanup = !git clean -df && git stash clear
+	# `git remote prune origin`: remove remote-tracking branches that were deleted from the remote repo
+	# `git gc`: cleanup unnecessary files and optimize the local repository
+	# `git clean -df`: remove untracked files and directories from the working tree
+	# `git stash clear`: remove all stashed states
+	trim = !git remote prune origin && git gc
+	cleanup = !git clean -df && git stash clear
 
-    # Add untracked, remove deleted, and show status
-    adda = !git add -A && git status
+	# Add untracked, remove deleted, and show status
+	adda = !git add -A && git status
 
-    # Fetch a repository ($1) and checkout its ref ($2) HEAD
-    browse = !bash -c 'git fetch "$1" "$2" && git checkout FETCH_HEAD' -
+	# Fetch a repository ($1) and checkout its ref ($2) HEAD
+	browse = !bash -c 'git fetch "$1" "$2" && git checkout FETCH_HEAD' -
 
-    # General
+	# General
 
-    s = status
-    ci = commit
+	s = status
+	ci = commit
 
-    pu = push
-    pl = pull
+	pu = push
+	pl = pull
 
-    a = add
-    aa = add --all
-
-    di = diff
-    dic = diff --cached
-
-    # Custom graph log (append any tree-ish)
-    graph = log --pretty=nice --date-order --graph
-    # Custom graph log for all branches
-    grapha = log --pretty=nice --date-order --graph --all
-
-    # Custom pretty log
-    logp = log --pretty=nice --date-order
-
-    # Diffstat log
-    logst = log --stat
-    # Short format diffstat log
-    logsf = log --stat --format=oneline --abbrev-commit
-
-    # Display the number of commits per author in numerical order
-    who = shortlog -sn --
-
-	di = diff
+	a = add
 	aa = add --all
 
+	di = diff
+	dic = diff --cached
+
+	# Custom graph log (append any tree-ish)
+	graph = log --pretty=nice --date-order --graph
+	# Custom graph log for all branches
+	grapha = log --pretty=nice --date-order --graph --all
+
+	# Custom pretty log
+	logp = log --pretty=nice --date-order
+
+	# Diffstat log
+	logst = log --stat
+	# Short format diffstat log
+	logsf = log --stat --format=oneline --abbrev-commit
+
+	# Display the number of commits per author in numerical order
+	who = shortlog -sn --
+
 	# Fancy logging.
-	#   h = head
-	#   hp = head with patch
-	#   r = recent commits, only current branch
-	#   ra = recent commits, all reachable refs
-	#   l = all commits, only current branch
-	#   la = all commits, all reachable refs
+	#	 h = head
+	#	 hp = head with patch
+	#	 r = recent commits, only current branch
+	#	 ra = recent commits, all reachable refs
+	#	 l = all commits, only current branch
+	#	 la = all commits, all reachable refs
 	head = !git l -1
 	h = !git head
 	hp = "!. ~/.githelpers && show_git_head"
@@ -62,19 +59,18 @@
 	l = "!. ~/.githelpers && pretty_git_log"
 	la = !git l --all
 
-
 [color]
-    # color opts: normal, black, red, green, yellow, blue, magenta, cyan, or white
+	# color opts: normal, black, red, green, yellow, blue, magenta, cyan, or white
 	ui = true
-    interactive = auto
+	interactive = auto
 
 [core]
-    # Use custom `.gitignore` and `.gitattributes`
-    excludesfile = /Users/tjkrusinski/.globalignore/.gitignore
-    attributesfile = ~/.gitattributes
+	# Use custom `.gitignore` and `.gitattributes`
+	excludesfile = /Users/tjkrusinski/.globalignore/.gitignore
+	attributesfile = ~/.gitattributes
 
 [credential]
-    helper = osxkeychain
+	helper = osxkeychain
 
 [push]
 	default = matching
@@ -87,7 +83,7 @@
 	user = tjkrusinski
 
 [ghi]
-	token = !security find-internet-password -a  -s github.com -l 'ghi token' -w
+	token = !security find-internet-password -a	-s github.com -l 'ghi token' -w
 
 [merge]
 	tool = vimdiff
