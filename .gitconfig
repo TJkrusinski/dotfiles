@@ -70,29 +70,24 @@
 
 [core]
     # Use custom `.gitignore` and `.gitattributes`
-	excludesfile = /Users/tjkrusinski/.globalignore/.gitignore
+    excludesfile = /Users/tjkrusinski/.globalignore/.gitignore
     attributesfile = ~/.gitattributes
 
 [credential]
     helper = osxkeychain
 
-[diff]
-    tool = mvimdiff
-
-[difftool]
-    prompt = false
-
-[pretty]
-    # tut: http://gitimmersion.com/lab_10.html
-    # ref: http://linux.die.net/man/1/git-log
-    # Result: <short-sha> <commit-message> (<pointer-names>) -- <commit-author-name>; <relative-time>
-    nice = "%C(yellow)%h%C(reset) %C(white)%s%C(cyan)%d%C(reset) -- %an; %ar"
 [push]
 	default = matching
+
 [user]
 	name = TJ Krusinski
 	email = tjkrus@gmail.com
+
 [github]
 	user = tjkrusinski
+
 [ghi]
 	token = !security find-internet-password -a  -s github.com -l 'ghi token' -w
+
+[merge]
+	tool = vimdiff
