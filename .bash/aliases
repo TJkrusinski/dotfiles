@@ -12,8 +12,10 @@ alias ~="cd ~"
 alias -- -="cd -"
 alias c="clear"
 
-# Git
-alias g="git"
+du="Do not use non git aliases for git"
+
+# Git - due for deprecation
+alias g="echo $du"
 alias gs="git status"
 alias gc="git commit"
 alias gp="git push"
