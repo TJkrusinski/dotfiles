@@ -14,10 +14,19 @@
     # Fetch a repository ($1) and checkout its ref ($2) HEAD
     browse = !bash -c 'git fetch "$1" "$2" && git checkout FETCH_HEAD' -
 
-    # Diff what is staged for the next commit
-    diffc = diff --cached
-    # Diff overview
-    diffst = diff --stat
+    # General
+
+    s = status
+    ci = commit
+
+    pu = push
+    pl = pull
+
+    a = add
+    aa = add --all
+
+    di = diff
+    dic = diff --cached
 
     # Custom graph log (append any tree-ish)
     graph = log --pretty=nice --date-order --graph
