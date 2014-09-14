@@ -30,8 +30,6 @@ alias dev="export NODE_ENV=development"
 alias prod="export NODE_ENV=production"
 alias stage="export NODE_ENV=staging"
 
-alias nw="/Applications/node-webkit.app/Contents/MacOS/node-webkit"
-
 # List dir contents aliases
 # ref: http://ss64.com/osx/ls.html
 # Long form no user group, color
@@ -45,10 +43,6 @@ alias lat="ls -AGFoth"
 
 # Concatenate and print content of files (add line numbers)
 alias catn="cat -n"
-
-# IP addresses
-alias ip='IP=`dig +short myip.opendns.com @resolver1.opendns.com`; growlnotify -s -a terminal -t "IP Address" -m "${IP}"'
-alias lip='IP=`ipconfig getifaddr en0`; growlnotify -s -a terminal -t "Local IP" -m "${IP}"'
 
 # Copy my public key to the pasteboard
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | printf '=> Public key copied to pasteboard.\n'"
@@ -68,17 +62,17 @@ alias hidedotfiles="defaults write com.apple.finder AppleShowAllFiles -bool fals
 alias showdeskicons="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 alias hidedeskicons="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 
-
 # Forward traffic out to the network
 alias gotoforwardmode="sudo sysctl -w net.inet.ip.forwarding=1"
 alias exitforwardmode="sudo sysctl -w net.inet.ip.forwarding=0"
 
+# Syntax highlighting for making keynotes
 alias hit="pbpaste | highlight --syntax=js --style=seashell --line-numbers -O rtf | pbcopy"
 alias hithtml="pbpaste | highlight --syntax=html --style=seashell --line-numbers -O rtf | pbcopy"
 alias _hit="highlight --syntax=js --style=seashell --line-numbers -O rtf | pbcopy"
 
-alias mou="open -a mou"
-
+# Open a new instance of slack so you can have two windows open simutaneously
 alias slack="open -n /Applications/Slack.app/"
 
+# Print out ipaddress for much info
 alias ip="ifconfig | grep \"inet \""
