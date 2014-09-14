@@ -9,8 +9,6 @@ declare -a files=(
     $HOME/.bash/functions/* # Functions
     $HOME/.bash/prompt # Custom bash prompt
     $HOME/.bash/paths # Path modifications (must source after `.bash_profile.local` in case of custom `brew` location)
-	$HOME/.nvm/nvm.sh
-	$HOME/.nvm/bash_completion
 )
 
 # If these files are readable, source them
