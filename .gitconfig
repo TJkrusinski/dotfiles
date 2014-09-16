@@ -28,6 +28,8 @@
 	di = diff
 	dic = diff --cached
 
+  co = checkout
+
 	# Custom graph log (append any tree-ish)
 	graph = log --pretty=nice --date-order --graph
 	# Custom graph log for all branches
