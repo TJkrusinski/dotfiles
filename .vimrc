@@ -17,8 +17,8 @@ syntax on
 
 set shell=bash
 
-colorscheme github
-set background=light
+colorscheme aloe
+set background=dark
 
 " gitgutter
 let g:gitgutter_enabled = 1
