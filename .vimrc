@@ -39,6 +39,14 @@ map ,p :w\|:!python %
 map ,y :w\|:!node % 
 map ,c :w\|:!echo % \| pbcopy \<cr>
 
+map ,b :w\|:!gulp bundle
+map ,bw :w\|:!gulp bundle-web
+map ,ba :w\|:!gulp bundle-web
+
+map ,gb :Gblame<cr>
+map ,gg :Ggrep<cr>
+map ,gl :Glog<cr>
+
 " go to last cursor postion if there was one
 autocmd BufReadPost *
 	\ if line("'\"") > 0 && line("'\"") <= line("$") |
