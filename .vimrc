@@ -68,3 +68,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+augroup PatchDiffHighlight
+  autocmd!
+  autocmd BufEnter *.patch,*.rej,*.diff syntax enable
+augroup END
