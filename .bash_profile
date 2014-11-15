@@ -33,3 +33,7 @@ fi
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 export PATH="$HOME/bin:$PATH"
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
