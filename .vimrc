@@ -41,7 +41,7 @@ map ,c :w\|:!echo % \| pbcopy \<cr>
 
 map ,b :w\|:!gulp bundle
 map ,bw :w\|:!gulp bundle-web
-map ,ba :w\|:!gulp bundle-web
+map ,ba :w\|:!gulp bundle-app
 
 map ,gb :Gblame<cr>
 map ,gg :Ggrep<cr>
