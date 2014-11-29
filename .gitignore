@@ -78,3 +78,8 @@ Creative\ Cloud\ Files
 .gnupg
 go
 .shofloharc
+mongo/
+.aspell.en.prepl
+.spell.en.pws
+.sh_history
+.aspell.en.pws
