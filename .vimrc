@@ -35,6 +35,7 @@ let g:airline_theme='sol'
 highlight ColorColumn ctermbg=255
 
 map ,t :w\|:!mocha %
+map ,tr :w\|:!browserify -t reactify -e % > foo.js && mocha foo.js
 map ,p :w\|:!python %
 map ,y :w\|:!node % 
 map ,c :w\|:!echo % \| pbcopy \<cr>
