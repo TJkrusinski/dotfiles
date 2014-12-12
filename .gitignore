@@ -83,3 +83,6 @@ mongo/
 .spell.en.pws
 .sh_history
 .aspell.en.pws
+sms.csv
+sms.txt
+.shoflo-process
